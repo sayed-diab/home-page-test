@@ -1,0 +1,280 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.home {
+    background-color: #f4f5f7;
+    max-width: 450px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.header>span {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.header img {
+    padding: 7.5px;
+}
+
+.header .search-i,
+.diamond-i {
+    background-color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+}
+
+.rec {
+    position: relative;
+    background-image: url('../assets/Rectangle.svg');
+    width: 350px;
+    height: 110.5px;
+    margin: 0 auto 20px;
+    text-align: center;
+    z-index: 20;
+
+}
+
+.rec::before {
+    content: url('../assets/x-solid.svg');
+    position: absolute;
+    font-size: 10px;
+    font-weight: lighter;
+    cursor: pointer;
+    color: black;
+    width: 10px;
+    height: 12px;
+    padding: 8px;
+    left: -6px;
+    top: -6px;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.rec h3 {
+    color: white;
+    font-weight: lighter;
+    font-size: 23px;
+    padding-top: 15px;
+    line-height: 23px;
+}
+
+.rec .steps {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.rec .steps span {
+    background-color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #2dd55b;
+    color: #2dd55b;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.rec .steps span:nth-of-type(2) {
+    position: relative;
+}
+
+.rec .steps span:nth-of-type(2)::before,
+span:nth-of-type(2)::after {
+    content: "";
+    background-color: #2dd55b;
+    height: 4px;
+    width: 60px;
+    position: absolute;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.rec span:nth-of-type(2)::before {
+    right: 45px;
+}
+
+.rec span:nth-of-type(2)::after {
+    left: 45px;
+}
+
+.rec .steps span>img {
+    width: 18px;
+    filter: invert(72%) sepia(23%) saturate(1464%) hue-rotate(79deg) brightness(93%) contrast(85%);
+}
+
+.robo {
+    background-color: white;
+    text-align: center;
+    margin: 30px auto 0;
+    padding: 15px;
+    max-width: 360px;
+    border-radius: 12px 12px 47px 47px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-border-radius: 12px 12px 47px 47px;
+    -moz-border-radius: 12px 12px 47px 47px;
+    -ms-border-radius: 12px 12px 47px 47px;
+    -o-border-radius: 12px 12px 47px 47px;
+}
+
+.robo img {
+    max-width: 232px;
+    max-width: 233;
+}
+
+.robo img,
+.robo .caption {
+    z-index: 1;
+}
+
+.robo .caption h1 {
+    font-weight: bold;
+}
+
+.robo .caption span {
+    color: #afa3a3;
+}
+
+
+.robo::before,
+.robo::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    width: 25%;
+    height: 35px;
+    background-color: rgb(255, 255, 255);
+    z-index: 0;
+    transform-origin: 100% 100%;
+
+}
+
+
+
+.robo::before {
+    transform: translate(50%, -50%) skew(80deg, -15deg);
+    -webkit-transform: translate(50%, -50%) skew(80deg, -15deg);
+    -moz-transform: translate(50%, -50%) skew(80deg, -15deg);
+    -ms-transform: translate(50%, -50%) skew(80deg, -15deg);
+    -o-transform: translate(50%, -50%) skew(80deg, -15deg);
+    border-radius: 50% 0% 0% 0%;
+    -webkit-border-radius: 50% 0% 0% 0%;
+    -moz-border-radius: 50% 0% 0% 0%;
+    -ms-border-radius: 50% 0% 0% 0%;
+    -o-border-radius: 50% 0% 0% 0%;
+}
+
+.robo::after {
+    transform: translate(-50%, 50%) skew(-80deg, 15deg);
+    -webkit-transform: translate(-50%, 20%) skew(-80deg, 15deg);
+    -moz-transform: translate(-50%, 50%) skew(-80deg, 15deg);
+    -ms-transform: translate(-50%, 50%) skew(-80deg, 15deg);
+    -o-transform: translate(-50%, 50%) skew(-80deg, 15deg);
+    border-radius: 0% 0% 0% 0%;
+    -webkit-border-radius: 0% 50% 0% 0%;
+    -moz-border-radius: 0% 0% 0% 0%;
+    -ms-border-radius: 0% 0% 0% 0%;
+    -o-border-radius: 0% 0% 0% 0%;
+}
+
+.footer {
+    background-color: white;
+    padding: 25px 20px;
+    max-width: 360px;
+    margin: 60px auto 0;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    position: relative;
+}
+
+.footer img {
+    cursor: pointer;
+}
+
+.footer img:nth-of-type(3) {
+    max-height: 25px;
+    cursor: pointer;
+}
+
+.footer img:nth-of-type(2) {
+    margin-left: 60px;
+}
+
+.footer .add {
+    background-color: #2dd55b;
+    position: absolute;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translate(-50%, -65%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    box-shadow: 0 30px 30px -20px #2dd55b;
+    cursor: pointer;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.footer .add:hover {
+    background-color: #ddd;
+    box-shadow: 0 30px 30px -20px black;
+}
